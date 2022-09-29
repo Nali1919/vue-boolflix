@@ -33,14 +33,13 @@ data(){
       axios
         .get(`https://api.themoviedb.org/3/search/movie?api_key=7e51f9cf5250b23176b9a110b3e86970&language=it-IT&query=${this.resultInput}&page=1&include_adult=false`)
         .then((response) => {
-          console.log(response)
-          console.log(response.data.results)
+          console.log('movie' , response)
+          console.log('movie',response.data.results)
           this.ArrayMovies = response.data.results
         })
         axios
           .get(`https://api.themoviedb.org/3/search/tv?api_key=7e51f9cf5250b23176b9a110b3e86970&language=it-IT&query=${this.resultInput}&include_adult=false`)
           .then ((response) =>{
-            console.log('serie tv',response)
             console.log('serie tv',response.data.results)
             this.ArraySerieTv = response.data.results
           })
@@ -53,7 +52,11 @@ data(){
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
 </style>
-
-
-
