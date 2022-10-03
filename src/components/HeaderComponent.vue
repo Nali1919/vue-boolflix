@@ -37,13 +37,17 @@ data(){
   };
   input{
     border: none;
+    font-size: 20px;
   };
   button{
     background-color: red;
     border: none;
+    width: 100px;
+    font-size: 20px
   }
 }
 .searchbar{
-  padding: 0 15px;
+  padding: 10px 15px;
+  
 }
 </style>
