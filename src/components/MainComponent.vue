@@ -75,7 +75,7 @@ main{
 
 h2{
   color: red;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 20px;
 }
 
@@ -91,12 +91,11 @@ h4{
 .card-container{
   display: flex;
   flex-wrap: wrap;
-  column-gap: 30px;
+  column-gap: 10px;
 
 }
 
 .card{
-  
  border: 1px solid black;
   width: 300px;
   padding: 20px;

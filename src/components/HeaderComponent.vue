@@ -33,17 +33,20 @@ data(){
   h1{
     color: red;
     padding: 15px;
-    font-size: 3rem;
+    font-size: 2rem;
   };
   input{
     border: none;
-    font-size: 20px;
+    font-size: 15px;
+  
+
   };
   button{
     background-color: red;
     border: none;
     width: 100px;
-    font-size: 20px
+    font-size: 15px;
+   
   }
 }
 .searchbar{
