@@ -22,8 +22,22 @@ data(){
     ArrayMovies : [],
     ArraySerieTv : [],
   }
-},
-  created(){
+  },
+  created() {
+   axios
+        .get(`https://api.themoviedb.org/3/search/movie?api_key=7e51f9cf5250b23176b9a110b3e86970&language=it-IT&query=${'marvel'}&page=1&include_adult=false`)
+        .then((response) => {
+          console.log('movie' , response)
+          console.log('movie',response.data.results)
+          this.ArrayMovies = response.data.results
+        })
+         axios
+          .get(`https://api.themoviedb.org/3/search/tv?api_key=7e51f9cf5250b23176b9a110b3e86970&language=it-IT&query=${'marvel'}&include_adult=false`)
+          .then ((response) =>{
+            console.log('serie tv',response.data.results)
+            this.ArraySerieTv = response.data.results
+          })
+    
    
   },
   methods : {

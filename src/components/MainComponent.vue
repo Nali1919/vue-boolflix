@@ -92,10 +92,12 @@ h4{
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
+
 }
 
 .card{
-  border: 2px solid black;
+  
+ border: 1px solid black;
   width: 300px;
   padding: 20px;
   margin: 10px;
